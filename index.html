@@ -8,8 +8,8 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    </head>
    <body>
-      <header>
-         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <header class="mt-10">
+         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <a class="navbar-brand active" href="#">John Burke</a>
             <ul class="navbar-nav">
                <li class="nav-item">
@@ -19,7 +19,7 @@
                   <a class="nav-link" href="#projects">Projects</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">College</a>
+                  <a class="nav-link" href="#college">College</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#other">Other</a>
@@ -29,13 +29,18 @@
       </header>
       <section class="container" id="about">
          <article class="jumbotron mb-0">
-            <h2 class="display-4 text-center">About</h2>
+            <h2 class="display-3 text-center mt-4">About</h2>
             <p class="lead text-center">Hi, I'm John Burke - an Irish College student with passion for comptuer science.</p>
-            <img class="rounded-circle mx-auto d-block img-fluid" src="http://2.gravatar.com/avatar/5902020be99b4e7ff7b19e420b4dadb6" alt="John Burke Picture">
+            <figure>
+              <img class="rounded-circle mx-auto d-block img-fluid" src="https://placekitten.com/300/300" alt="John Burke Picture">
+              <figcaption class="text-center figure-caption">Me looking suave in a suit</figcaption>
+            </figure>
+
          </article>
       </section>
-      <div class="container-fluid">
-         <section class="row border mt-0" id="projects">
+      <div class="container-fluid border">
+        <h2 class="display-3 my-5 text-center">Projects</h2>
+         <section class="row mt-0" id="projects">
          <article class="col">
             <div class="text-center">
                <h2>Pi Security Camera</h2>
@@ -57,7 +62,7 @@
          </section>
       </div>
       <section class="container my-5" id="college">
-         <h2 class="my-5 text-center">College</h2>
+         <h2 class="my-5 text-center display-3">College</h2>
       </section>
       <footer class="page-footer font-small bg-secondary pt-4 text-light w-100" id="other">
          <div class="container-fluid text-center text-md-left">
@@ -92,7 +97,7 @@
             </nav>
          </div>
          <div class="footer-copyright text-center py-3 bg-dark text-white">© 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MIT Open Liscense</a>
          </div>
       </footer>
    </body>
