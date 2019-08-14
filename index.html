@@ -5,6 +5,8 @@
       <title>John Burke</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/master.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    </head>
    <body>
@@ -19,7 +21,7 @@
                   <a class="nav-link" href="#projects">Projects</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#college">College</a>
+                  <a class="nav-link" href="#employment">Employment</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#other">Other</a>
@@ -32,37 +34,89 @@
             <h2 class="display-3 text-center mt-4">About</h2>
             <p class="lead text-center">Hi, I'm John Burke - an Irish College student with passion for comptuer science.</p>
             <figure>
-              <img class="rounded-circle mx-auto d-block img-fluid" src="https://placekitten.com/300/300" alt="John Burke Picture">
-              <figcaption class="text-center figure-caption">Me looking suave in a suit</figcaption>
+               <img class="rounded-circle mx-auto d-block img-fluid" src="https://placekitten.com/300/300" alt="John Burke Picture">
+               <figcaption class="text-center figure-caption">Me looking suave in a suit</figcaption>
             </figure>
-
          </article>
       </section>
-      <div class="container-fluid border">
-        <h2 class="display-3 my-5 text-center">Projects</h2>
-         <section class="row mt-0" id="projects">
-         <article class="col">
-            <div class="text-center">
-               <h2>Pi Security Camera</h2>
-               <img class="img-fluid rounded" src="https://blogit84109786.files.wordpress.com/2019/01/img_20190122_213344488-e1548193444943.jpg?w=840" alt="Python Security Camera">
+      <section id="projects-carousel" class="carousel slide  bg-dark" data-ride="carousel">
+         <h2 class="text-center display-3 text-light py-5" id="projects">Projects</h2>
+         <ol class="carousel-indicators">
+            <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#projects-carousel" data-slide-to="1"></li>
+            <li data-target="#projects-carousel" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner text-center pb-5">
+            <div class="carousel-item active">
+               <img class="d-block mx-auto img-fluid" src="https://blogit84109786.files.wordpress.com/2019/01/img_20190122_213344488-e1548193444943.jpg?w=840" alt="First slide">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Pi-Secuitry Camera</h5>
+                  <p>Read about how I turned my raspberry pi into a motion sensing camera</p>
+               </div>
             </div>
-         </article>
-         <article class="col">
-            <div class="text-center">
-               <h2>Genetic Algorithm</h2>
-               <img class="img-fluid rounded" src="https://blogit84109786.files.wordpress.com/2019/01/genetic_alg_pic1-e1548683708667.png" alt="Genetic Algorithm Example">
+            <div class="carousel-item">
+               <img class="d-block mx-auto img-fluid" src="https://blogit84109786.files.wordpress.com/2019/01/img_20190122_213344488-e1548193444943.jpg?w=840" alt="Second slide">
+               <div class="carousel-caption d-none d-md-block text-dark">
+                  <h5>Genetic Algorithm</h5>
+                  <p>A quick look into the genetic algorithm</p>
+               </div>
             </div>
-         </article>
-         <article class="col">
-            <div class="text-center">
-               <h2>Coffee</h2>
-               <img class="img-fluid rounded" src="https://blogit84109786.files.wordpress.com/2019/03/img_1857-e1553864015128.jpg?w=840" alt="Coffee">
+            <div class="carousel-item">
+               <img class="d-block mx-auto img-fluid" src="https://blogit84109786.files.wordpress.com/2019/03/img_1857-e1553864015128.jpg?w=840" alt="Third slide">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Coffee Reviews</h5>
+                  <p>Cool coffee reviews</p>
+               </div>
             </div>
-         </article>
-         </section>
-      </div>
-      <section class="container my-5" id="college">
-         <h2 class="my-5 text-center display-3">College</h2>
+         </div>
+         <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </section>
+      <section class="container my-5" id="employment">
+         <h2 class="my-5 text-center display-3">Employment</h2>
+         <!-- List group -->
+         <div class="row">
+           <div class="col-4">
+             <div class="list-group" id="list-tab" role="tablist">
+               <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Quality Engineer Intern - HMH</a>
+               <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Android developer - JDM</a>
+               <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Exploratory Tester - JDM</a>
+
+             </div>
+           </div>
+           <div class="col-8">
+             <div class="tab-content" id="nav-tabContent">
+               <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                 <h3 class="display-5">June 2019 - September 2019</h3>
+                 <hr>
+                 <p>Quality Engineer Intern at Haughton Mifflin Harcourt</p>
+                 <p><b>Key Responsibilites: </b>Writing performance tests in Gatling and Scala, debugging e2e tests and charting user flows based off analytical data.</p>
+               </div>
+               <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                 <h3 class="display-5">December 2018 - May 2019</h3>
+                 <hr>
+                 <p>Android java developer at JDM</p>
+                 <p><b>Key Responsibilites: </b>Designing, writing and testing a cash register app to be used in bars using technologies such as stripe and bluetooth.</p>
+               </div>
+
+               <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                 <h3 class="display-5">October 2018 - December 2019</h3>
+                 <hr>
+                 <p>Exploratory tester for a webapp at JDM</p>
+                 <p><b>Key Responsibilites: </b>Finding security and UI flaws in a system and automating e2e tests to help with future debugging.</p>
+               </div>
+
+             </div>
+           </div>
+         </div>
+
+
       </section>
       <footer class="page-footer font-small bg-secondary pt-4 text-light w-100" id="other">
          <div class="container-fluid text-center text-md-left">
@@ -73,19 +127,8 @@
                </div>
                <hr class="clearfix w-100 d-md-none pb-3">
                <div class="col-md-3 mb-md-0 mb-3">
-                  <h5 class="text-uppercase">Links</h5>
-                  <ul class="list-unstyled navbar-nav">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Link 1</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Link 2</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-md-3 mb-md-0 mb-3">
                   <h5 class="text-uppercase">Blogit Links</h5>
-                  <ul class="list-unstyled navbar-nav">
+                  <ul class="list-unstyled navbar-nav py-0">
                      <li class="nav-item">
                         <a class="nav-link" href="https://blogit.life">Blogit.life</a>
                      </li>
