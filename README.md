@@ -1,2 +1,2 @@
 # Personal-Website
-My personal website
+This is a personal website to show off my projects
