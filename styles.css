@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
   background-color: black;
-  font-family: cursive;
+  font-family: 'Roboto';
 }
 
 header{
@@ -68,4 +70,36 @@ footer{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 1.5em;
+}
+
+#project1{
+  top: 10%;
+  margin: 10px;
+  padding: 10px;
+  left: 5%;
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  border: 3px;
+  border-style: solid;
+  border-color: white;
+}
+
+#project2{
+  border: 3px;
+  border-style: solid;
+  border-color: white;
+  margin: 10px;
+  padding: 10px;
+  top: 10%;
+  left: 50%;
+  position: absolute;
+  width: 40%;
+  height: 70%
+}
+
+.boldWhite{
+  border: 1.2px;
+  border-style: solid;
+  border-color: white;
 }

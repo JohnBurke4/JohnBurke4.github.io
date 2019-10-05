@@ -24,7 +24,16 @@ var workHtml = `
   <br>
 `;
 
-var projectsHtml = ``;
+var projectsHtml = `
+  <section id="project1">
+    <h3>Security Camera</h3>
+    <hr class = "boldWhite">
+  </section>
+  <section id="project2">
+    <h3>Raadit</h3>
+    <hr class = "boldWhite">
+  </section>
+`;
 
 function fadeInCV(){
     if (opacity <= 1.0){
@@ -73,5 +82,11 @@ function workPage() {
   document.getElementById("main").innerHTML = workHtml;
 }
 
+function projectsPage() {
+  clearTimeout(timeout);
+  document.getElementById("main").innerHTML = projectsHtml;
+}
+
 document.getElementById("about").addEventListener("click", aboutPage);
 document.getElementById("work").addEventListener("click", workPage);
+document.getElementById("projects").addEventListener("click", projectsPage);
