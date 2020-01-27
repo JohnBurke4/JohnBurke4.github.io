@@ -2,7 +2,7 @@
 
 body {
   background-color: black;
-  font-family: 'Roboto';
+  font-family: 'monospace';
 }
 
 header{
@@ -83,6 +83,7 @@ footer{
   border: 3px;
   border-style: solid;
   border-color: white;
+  border-radius: 2%;
 }
 
 #project2{
@@ -95,7 +96,8 @@ footer{
   left: 50%;
   position: absolute;
   width: 40%;
-  height: 70%
+  height: 70%;
+  border-radius: 2%;
 }
 
 .boldWhite{

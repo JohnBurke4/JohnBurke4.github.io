@@ -28,6 +28,11 @@ var projectsHtml = `
   <section id="project1">
     <h3>Security Camera</h3>
     <hr class = "boldWhite">
+    </br>
+    <article id="project1Text">
+      <p>Using a Raspberry Pi, a camera and an ultrasonic sensor to make a motion sensing
+      security camera. </p>
+    </article>
   </section>
   <section id="project2">
     <h3>Raadit</h3>
@@ -71,6 +76,7 @@ function typeWriter() {
 aboutPage()
 
 function aboutPage() {
+  document.getElementById("about").style.color = "black"
   document.getElementById("main").innerHTML = aboutHtml;
   index = 0;
   opacity = 0.0;
