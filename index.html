@@ -3,21 +3,18 @@
 <head>
   <title>Bing Bong</title>
   <script>
-    const path = window.location.pathname;
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code');
 
     if (code) {
       window.location.href = 'bingbong://join?code=' + code;
-      setTimeout(() => {
-        window.location.href = 'https://play.google.com/store/apps/details?id=com.bingbong.app';
-      }, 1500);
     }
   </script>
 </head>
 <body style="background:#0D0D0F;color:white;font-family:sans-serif;text-align:center;padding-top:100px;">
   <h1>🔔 Bing Bong</h1>
-  <p>Opening app...</p>
-  <p><a href="https://play.google.com/store/apps/details?id=com.bingbong.app" style="color:#FF8F3B;">Download on Google Play</a></p>
+  <p id="status">Opening app...</p>
+  <br><br>
+  <p><a href="https://play.google.com/store/apps/details?id=com.bingbong.app" style="color:#FF8F3B;font-size:18px;">Don't have the app? Download here</a></p>
 </body>
 </html>
